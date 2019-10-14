@@ -37,7 +37,7 @@ export interface IOptions {
 export default class Selectr {
 	constructor(select: HTMLSelectElement, options: IOptions);
 	public setValue(value: string | string[]): void;
-	public getValue(toObject?: boolean, toJson?: boolean): string | { text: string, value: string };
+	public getValue(toObject?: boolean, toJson?: boolean): string | string[] | { text: string, value: string };
 	public search(query: string, anchor?: boolean): IData[];
 	public add(data: IData | IData[]): void;
 	public remove(data: number | string | number[] | string[]): void;
